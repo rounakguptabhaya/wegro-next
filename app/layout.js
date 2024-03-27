@@ -1,5 +1,41 @@
 import { Inter } from "next/font/google";
-import "./globals.css";
+// import "./globals.css";
+import Header from "@/components/layput/Header";
+
+import "@../../../public/css/styles.css"
+
+
+// import "../public/js/jquery"
+// import "../public/js/popper.min"
+// import "../public/js/bootstrap.min"
+// import "../public/js/appear"
+// import "../public/js/parallax.min"
+// import "../public/js/tilt.jquery.min"
+// import "../public/js/jquery.paroller.min"
+// import "../public/js/wow"
+// import "../public/js/swiper.min"
+// import "../public/js/backtotop"
+// import "../public/js/odometer"
+
+// import "../public/js/parallax-scroll"
+// import "../public/js/gsap.min"
+// import "../public/js/SplitText.min"
+// import "../public/js/ScrollTrigger.min"
+// import "../public/js/ScrollToPlugin.min"
+// import "../public/js/ScrollSmoother.min"
+
+// import "../public/js/touchspin"
+// import "../public/js/jquery.marquee.min"
+// import "../public/js/magnific-popup.min"
+// import "../public/js/nav-tool"
+// import "../public/js/jquery-ui"
+// import "../public/js/element-in-view"
+// import "../public/js/script"
+
+import Loading from "@/components/Loading";
+
+
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -11,7 +47,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        {/* <Loading /> */}
+        {/* <div>
+          <Header />
+        </div> */}
+        
+        {children}
+      </body>
     </html>
   );
 }
